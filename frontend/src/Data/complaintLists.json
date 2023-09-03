@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john.doe@example.com",
+    "phone_number": "123-456-7890",
+    "imei_number": "123456789012345",
+    "phone_model": "iPhone 12",
+    "issues": "Screen cracked",
+    "description": "Screen cracked after dropping the phone."
+  },
+  {
+    "id": "2",
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "email": "jane.smith@example.com",
+    "phone_number": "987-654-3210",
+    "imei_number": "987654321098765",
+    "phone_model": "Samsung Galaxy S21",
+    "issues": "Battery draining quickly",
+    "description": "The battery is not holding a charge for long."
+  },
+  {
+    "id": "3",
+    "firstname": "David",
+    "lastname": "Johnson",
+    "email": "david.johnson@example.com",
+    "phone_number": "555-123-4567",
+    "imei_number": "555555555555555",
+    "phone_model": "Google Pixel 5",
+    "issues": "Camera not working",
+    "description": "Camera app crashes when trying to take photos."
+  },
+  {
+    "id": "4",
+    "firstname": "Sarah",
+    "lastname": "Wilson",
+    "email": "sarah.wilson@example.com",
+    "phone_number": "777-888-9999",
+    "imei_number": "777777777777777",
+    "phone_model": "OnePlus 9",
+    "issues": "No sound from speakers",
+    "description": "No audio output from the phone's speakers."
+  },
+  {
+    "id": "5",
+    "firstname": "Michael",
+    "lastname": "Brown",
+    "email": "michael.brown@example.com",
+    "phone_number": "111-222-3333",
+    "imei_number": "111111111111111",
+    "phone_model": "Xiaomi Mi 11",
+    "issues": "Touchscreen not responsive",
+    "description": "Touchscreen does not respond to touch gestures."
+  },
+  {
+    "id": "6",
+    "firstname": "Emily",
+    "lastname": "Garcia",
+    "email": "emily.garcia@example.com",
+    "phone_number": "222-333-4444",
+    "imei_number": "222222222222222",
+    "phone_model": "Sony Xperia 1 III",
+    "issues": "Overheating",
+    "description": "Phone gets very hot during use."
+  },
+  {
+    "id": "7",
+    "firstname": "Daniel",
+    "lastname": "Lee",
+    "email": "daniel.lee@example.com",
+    "phone_number": "333-444-5555",
+    "imei_number": "333333333333333",
+    "phone_model": "LG G8",
+    "issues": "Charging port broken",
+    "description": "Unable to charge the phone due to a damaged port."
+  },
+  {
+    "id": "8",
+    "firstname": "Olivia",
+    "lastname": "Anderson",
+    "email": "olivia.anderson@example.com",
+    "phone_number": "444-555-6666",
+    "imei_number": "444444444444444",
+    "phone_model": "Motorola Moto G Power",
+    "issues": "Slow performance",
+    "description": "Phone is sluggish and apps take a long time to open."
+  },
+  {
+    "id": "9",
+    "firstname": "James",
+    "lastname": "Martinez",
+    "email": "james.martinez@example.com",
+    "phone_number": "555-666-7777",
+    "imei_number": "555555555555555",
+    "phone_model": "Nokia 8.3",
+    "issues": "Network signal loss",
+    "description": "Frequent loss of network signal."
+  },
+  {
+    "id": "10",
+    "firstname": "Sophia",
+    "lastname": "Lopez",
+    "email": "sophia.lopez@example.com",
+    "phone_number": "666-777-8888",
+    "imei_number": "666666666666666",
+    "phone_model": "Huawei P30",
+    "issues": "Software update error",
+    "description": "Unable to install software updates."
+  }
+]
