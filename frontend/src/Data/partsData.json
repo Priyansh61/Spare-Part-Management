@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "part": "Screen",
+    "description": "LCD screen replacement for damaged or cracked screens.",
+    "repair_cost": 100
+  },
+  {
+    "id": 2,
+    "part": "Battery",
+    "description": "Replacement battery for improved battery life and performance.",
+    "repair_cost": 50
+  },
+  {
+    "id": 3,
+    "part": "Camera Module",
+    "description": "Replacement camera module for front or rear-facing cameras.",
+    "repair_cost": 80
+  },
+  {
+    "id": 4,
+    "part": "Charging Port",
+    "description": "Replacement charging port for issues with charging or connectivity.",
+    "repair_cost": 60
+  },
+  {
+    "id": 5,
+    "part": "Speaker",
+    "description": "Replacement speaker for issues with sound or audio quality.",
+    "repair_cost": 40
+  },
+  {
+    "id": 6,
+    "part": "Microphone",
+    "description": "Replacement microphone for issues with voice recording or calls.",
+    "repair_cost": 30
+  },
+  {
+    "id": 7,
+    "part": "Motherboard",
+    "description": "Replacement motherboard for major performance or hardware issues.",
+    "repair_cost": 150
+  },
+  {
+    "id": 8,
+    "part": "Back Cover",
+    "description": "Replacement back cover for cosmetic damage or design preference.",
+    "repair_cost": 20
+  },
+  {
+    "id": 9,
+    "part": "Volume Buttons",
+    "description": "Replacement volume buttons for issues with volume control.",
+    "repair_cost": 25
+  },
+  {
+    "id": 10,
+    "part": "SIM Card Tray",
+    "description": "Replacement SIM card tray for issues with SIM card insertion.",
+    "repair_cost": 10
+  }
+]
