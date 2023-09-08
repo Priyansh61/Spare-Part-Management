@@ -1,6 +1,6 @@
-package Entity;
+package com.xiaomi.management.Entity;
 
-import enums.UserRole;
+import com.xiaomi.management.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -19,7 +19,7 @@ import java.util.Collections;
 @NoArgsConstructor
 @Entity
 @Table(name = "_user")
-public class user implements UserDetails {
+public class User implements UserDetails {
 
     @Id
     @GeneratedValue
@@ -32,7 +32,7 @@ public class user implements UserDetails {
     private UserRole userRole;
     private Boolean enabled;
 
-    public user(String name, String username, String email, String password, UserRole userRole, Boolean enabled) {
+    public User(String name, String username, String email, String password, UserRole userRole, Boolean enabled) {
         this.name = name;
         this.username = username;
         this.email = email;
