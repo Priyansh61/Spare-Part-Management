@@ -1,26 +1,28 @@
 package com.xiaomi.management.Controller;
 
 
-//import com.xiaomi.management.Services.UserService;
+import com.xiaomi.management.Services.UserService;
 import lombok.AllArgsConstructor;
+import com.xiaomi.management.Entity.User;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "api/user")
 @AllArgsConstructor
 public class UserController {
 
-//    private UserService userService;
+    private UserService userService;
 
     @GetMapping("/greet")
     public ResponseEntity<String> greet() {
         return ResponseEntity.ok("hello guys") ;
     }
-//    public String register(@RequestBody user request ) {
-//        return userService.register(request);
-//    }
+
+
+    @PostMapping("/register")
+    public ResponseEntity<Object> register(@RequestBody User request ) {
+        return userService.register(request);
+    }
 
 }
