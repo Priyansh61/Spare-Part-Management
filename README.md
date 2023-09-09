@@ -80,7 +80,7 @@ This tool automates Spare Part Planning, Visibility, and Assignment across Xiaom
 
 ```bash
 # Clone repository and navigate
-git clone [repo_url] && cd [project_dir]
+git clone git@github.com:Priyansh61/Spare-Part-Management.git && cd management
 
 # Backend setup
 mvn install
