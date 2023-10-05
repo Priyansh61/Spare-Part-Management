@@ -35,8 +35,8 @@ export default function RequiredParts() {
 
   const handleRequiredParts = (part) => {
     setPartsRequired([...partsRequired, part]);
-    setSearch("")
-  }
+    setSearch("");
+  };
 
   return (
     <div className="my-12 w-full">
@@ -95,7 +95,8 @@ export default function RequiredParts() {
                       className="bg-white p-2 text-l font-bold rounded-lg w-full"
                       key={index}
                     >
-                      {index+1}{". "} {item}
+                      {index + 1}
+                      {". "} {item}
                     </div>
                     <button
                       className="absolute right-2 text-2xl text-orange-500"

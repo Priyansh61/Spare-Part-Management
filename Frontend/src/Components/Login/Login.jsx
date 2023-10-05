@@ -23,7 +23,7 @@ export default function Login() {
   };
 
   return (
-    <div className="relative w-full h-[90vh] md:flex md:items-center md:justify-center max-sm:mt-8">
+    <div className="relative w-full h-[90vh] sm:flex sm:items-center sm:justify-center max-sm:mt-16 max-md:px-6">
       <div className="w-full bg-white rounded-lg shadow light:border md:mt-0 sm:max-w-md xl:p-0 light:bg-gray-800 light:border-gray-700">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold text-center pb-5 leading-tight tracking-tight text-gray-900 md:text-2xl light:text-white">
@@ -71,7 +71,7 @@ export default function Login() {
                     id="remember"
                     aria-describedby="remember"
                     type="checkbox"
-                    className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 light:bg-gray-700 light:border-gray-600 light:focus:ring-primary-600 light:ring-offset-gray-800"
+                    className="w-4 h-4 border border-gray-300 rounded accent-orange-600 bg-gray-50"
                     required=""
                   />
                 </div>
