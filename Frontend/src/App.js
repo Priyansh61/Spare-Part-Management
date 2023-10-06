@@ -5,22 +5,25 @@ import ComplainLists from "./Components/ServiceCenter/Pages/ComplainLists";
 import ComplainDetails from "./Components/ServiceCenter/Pages/ComplainDetails";
 import LandingPage from "./Components/CustomerSupport/pages/LandingPage";
 import RequiredParts from "./Components/ServiceCenter/Pages/RequiredParts";
+import ServiceCenterPartsState from "./Context/ServiceCenter/ServiceCenterPartsState";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/complaint-list" element={<ComplainLists />} />
-        <Route path="requiredParts" element={<RequiredParts />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/complaint-list/:complaintId"
-          element={<ComplainDetails />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <ServiceCenterPartsState>
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/complaint-list" element={<ComplainLists />} />
+          <Route path="requiredParts" element={<RequiredParts />} />
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/complaint-list/:complaintId"
+            element={<ComplainDetails />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </ServiceCenterPartsState>
   );
 }
 

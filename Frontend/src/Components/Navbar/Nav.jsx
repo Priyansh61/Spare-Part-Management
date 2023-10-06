@@ -86,6 +86,7 @@ export default function Nav() {
                 <a
                   href="/"
                   className="relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  onClick={toggleMenu}
                 >
                   Check Status
                 </a>
@@ -95,6 +96,7 @@ export default function Nav() {
                 <Link
                   to="/"
                   className="relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  onClick={toggleMenu}
                 >
                   Home
                 </Link>
@@ -104,6 +106,7 @@ export default function Nav() {
                 <Link
                   to="/login"
                   className="relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  onClick={toggleMenu}
                 >
                   Admin Login
                 </Link>

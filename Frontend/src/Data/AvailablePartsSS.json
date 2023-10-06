@@ -1,0 +1,82 @@
+[
+  {
+    "part_name": "Battery",
+    "quantity": 0
+  },
+  {
+    "part_name": "Screen Display",
+    "quantity": 75
+  },
+  {
+    "part_name": "Camera Module",
+    "quantity": 50
+  },
+  {
+    "part_name": "Charging Port",
+    "quantity": 60
+  },
+  {
+    "part_name": "Motherboard",
+    "quantity": 40
+  },
+  {
+    "part_name": "Speaker",
+    "quantity": 80
+  },
+  {
+    "part_name": "Back Cover",
+    "quantity": 90
+  },
+  {
+    "part_name": "Antenna",
+    "quantity": 70
+  },
+  {
+    "part_name": "SIM Card Tray",
+    "quantity": 110
+  },
+  {
+    "part_name": "Front Camera",
+    "quantity": 55
+  },
+  {
+    "part_name": "Earpiece",
+    "quantity": 65
+  },
+  {
+    "part_name": "Vibrator Motor",
+    "quantity": 45
+  },
+  {
+    "part_name": "Power Button",
+    "quantity": 30
+  },
+  {
+    "part_name": "Volume Button",
+    "quantity": 35
+  },
+  {
+    "part_name": "Microphone",
+    "quantity": 70
+  },
+  {
+    "part_name": "Screw Set",
+    "quantity": 120
+  },
+  {
+    "part_name": "Display Cable",
+    "quantity": 55
+  },
+  {
+    "part_name": "Touchscreen Digitizer",
+    "quantity": 65
+  },
+  {
+    "part_name": "Headphone Jack",
+    "quantity": 40
+  },
+  {
+    "part_name": "Wi-Fi Module",
+    "quantity": 50
+  }
+]

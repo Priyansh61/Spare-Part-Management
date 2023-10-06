@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "part": "Screen",
+    "part": "Screen Display",
     "description": "LCD screen replacement for damaged or cracked screens.",
     "repair_cost": 100
   },
@@ -49,13 +49,19 @@
   },
   {
     "id": 9,
-    "part": "Volume Buttons",
+    "part": "Volume Button",
     "description": "Replacement volume buttons for issues with volume control.",
     "repair_cost": 25
   },
   {
     "id": 10,
     "part": "SIM Card Tray",
+    "description": "Replacement SIM card tray for issues with SIM card insertion.",
+    "repair_cost": 10
+  },
+  {
+    "id": 11,
+    "part": "sss",
     "description": "Replacement SIM card tray for issues with SIM card insertion.",
     "repair_cost": 10
   }
