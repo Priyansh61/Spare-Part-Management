@@ -58,7 +58,7 @@ export default function ComplainDetails() {
           <div className=" flex justify-center items-center">
             <Link
               to="/requiredParts"
-              className="w-1/2 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              className="w-1/2 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
             >
               Resolve
             </Link>

@@ -66,7 +66,7 @@ export default function LandingPage() {
               </div>
             </form>
             <div className="my-2 w-full">
-              <button className="uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              <button className="uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                 Register Complain
               </button>
             </div>

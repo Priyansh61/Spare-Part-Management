@@ -11,7 +11,9 @@ export default function RequiredParts() {
   const [searchResult, setSearchResult] = useState([]);
   const [partsRequired, setPartsRequired] = useState([]);
 
-  const {unAvailableParts, updateUnAvailableParts } = useContext(ServiceCenterPartsContext);
+  const { updateUnAvailableParts } = useContext(
+    ServiceCenterPartsContext
+  );
 
   const [buttonPopus, setButtonPopus] = useState(false);
 
@@ -19,7 +21,6 @@ export default function RequiredParts() {
   const handleAvailableParts = (e) => {
     if (!issues) {
       alert("Please Fill The Required Fields");
-      return;
     }
     e.preventDefault();
     var tempParts = [];
@@ -73,8 +74,8 @@ export default function RequiredParts() {
 
   return (
     <>
-      <div className="my-12 w-full">
-        <div className="flex items-center justify-center max-sm:mx-5">
+      <div className="m-12 max-sm:mx-5">
+        <div className="flex items-center justify-center">
           <div className="relative bg-white py-6 px-20 rounded-3xl w-11/12 my-4 shadow-xl max-md:w-full max-sm:p-6">
             <form
               className="grid grid-cols-1 gap-3 mt-5"
@@ -150,7 +151,7 @@ export default function RequiredParts() {
               <div className="my-2 w-full flex justify-center ">
                 <button
                   onClick={() => setButtonPopus(true)}
-                  className="w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  className="w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 >
                   Check Availability
                 </button>
@@ -159,7 +160,7 @@ export default function RequiredParts() {
           </div>
         </div>
       </div>
-      {unAvailableParts.length!==0 ? (
+      {partsRequired.length !== 0 ? (
         <AvailableParts trigger={buttonPopus} setTrigger={setButtonPopus} />
       ) : null}
     </>
