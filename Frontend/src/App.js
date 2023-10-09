@@ -7,6 +7,7 @@ import LandingPage from "./Components/CustomerSupport/pages/LandingPage";
 import RequiredParts from "./Components/ServiceCenter/Pages/RequiredParts";
 import ServiceCenterPartsState from "./Context/ServiceCenter/ServiceCenterPartsState";
 import CustomersComplaint from "./Components/PlanningCenter/Pages/CustomersComplaint";
+import WarehouseStocks from "./Components/WarehouseCenter/Pages/WarehouseStocks";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/complaint-list" element={<ComplainLists />} />
           <Route path="/customers-complaint" element={<CustomersComplaint />} />
           <Route path="requiredParts" element={<RequiredParts />} />
+          <Route path="warehouse" element={<WarehouseStocks />} />
           <Route path="/login" element={<Login />} />
           <Route
             path="/complaint-list/:complaintId"

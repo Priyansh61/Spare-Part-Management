@@ -42,7 +42,7 @@ export default function Login() {
       password === "admin" &&
       serviceCategory === "WarehouseCenters"
     ) {
-      navigate("/");
+      navigate("/warehouse");
     } else {
       alert("Invalid Credentials");
     }

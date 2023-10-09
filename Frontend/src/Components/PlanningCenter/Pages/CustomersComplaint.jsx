@@ -45,10 +45,10 @@ export default function CustomersComplaint() {
                   <p>{details.description}</p>
                   <div className="flex justify-center gap-6 max-sm:flex-col max-sm:gap-0">
                     <button className=" w-1/5 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                      Register
+                      Approve
                     </button>
                     <button className=" w-1/5 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                      Remove
+                      Deny
                     </button>
                   </div>
                 </div>

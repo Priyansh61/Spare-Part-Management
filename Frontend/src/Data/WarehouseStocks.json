@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "part": "Battery",
+    "description": "Replacement battery for improved battery life and performance.",
+    "quantity": 2
+  },
+  {
+    "id":2,
+    "part": "Screen Display",
+    "description": "LCD screen replacement for damaged or cracked screens.",
+    "quantity": 4
+  }
+]

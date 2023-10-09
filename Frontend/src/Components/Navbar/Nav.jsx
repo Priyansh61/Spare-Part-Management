@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState } from "react";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -20,14 +20,14 @@ export default function Nav() {
 
         <div className=" max-md:hidden">
           <ul className="flex gap-10">
-            <li>
+            {/* <li>
               <a
                 href="/"
                 className="relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
               >
                 Check Status
               </a>
-            </li>
+            </li> */}
 
             <li>
               <Link
