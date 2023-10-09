@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   const [userName, setUserName] = useState();
   const [password, setPassword] = useState();
+  const [serviceCategory, setServiceCategory] = useState();
 
   const navigate = useNavigate();
 
@@ -15,10 +16,35 @@ export default function Login() {
     setPassword(e.target.value);
   };
 
+  const handleServiceCategoryChange = (e) => {
+    setServiceCategory(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (userName === "admin" && password === "admin") {
+
+    if (
+      userName === "admin" &&
+      password === "admin" &&
+      serviceCategory === "PlanningTeam"
+    ) {
+      navigate("/customers-complaint");
+
+    } else if (
+      userName === "admin" &&
+      password === "admin" &&
+      serviceCategory === "ServiceCentres"
+    ) {
       navigate("/complaint-list");
+    }
+    else if (
+      userName === "admin" &&
+      password === "admin" &&
+      serviceCategory === "WarehouseCenters"
+    ) {
+      navigate("/");
+    } else {
+      alert("Invalid Credentials");
     }
   };
 
@@ -30,6 +56,25 @@ export default function Login() {
             Sign in to your account
           </h1>
           <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
+            <div>
+              <label
+                for="username"
+                className="block mb-2 text-sm font-medium text-gray-900 light:text-white"
+              >
+                Service Category
+              </label>
+              <select
+                id="ServiceCategory"
+                className="w-full bg-gray-100 mt-2 p-3 border text-black border-gray-300 focus:outline-none focus:shadow-outline rounded-lg focus:ring-primary-600 focus:border-primary-600 block light:bg-gray-1000 light:border-gray-600 light:text-white light:focus:ring-blue-500 light:focus:border-blue-500"
+                value={serviceCategory}
+                onChange={handleServiceCategoryChange}
+              >
+                <option value="">Select Service Category *</option>
+                <option value="PlanningTeam">Planning Team</option>
+                <option value="ServiceCentres">Service Centres</option>
+                <option value="WarehouseCenters">Warehouse Centres</option>
+              </select>
+            </div>
             <div>
               <label
                 for="username"

@@ -6,6 +6,7 @@ import ComplainDetails from "./Components/ServiceCenter/Pages/ComplainDetails";
 import LandingPage from "./Components/CustomerSupport/pages/LandingPage";
 import RequiredParts from "./Components/ServiceCenter/Pages/RequiredParts";
 import ServiceCenterPartsState from "./Context/ServiceCenter/ServiceCenterPartsState";
+import CustomersComplaint from "./Components/PlanningCenter/Pages/CustomersComplaint";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/complaint-list" element={<ComplainLists />} />
+          <Route path="/customers-complaint" element={<CustomersComplaint />} />
           <Route path="requiredParts" element={<RequiredParts />} />
           <Route path="/login" element={<Login />} />
           <Route

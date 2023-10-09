@@ -5,7 +5,7 @@ import { BsPhone } from "react-icons/bs";
 import { MdOutlineReportProblem } from "react-icons/md";
 import IMEILOGO from "../../../assets/imei-icon.png";
 import { Link } from "react-router-dom";
-import Loader from "../../Loader/Loader";
+import LoaderServiceComplaint from "../../Loader/LoaderServiceComplaint";
 
 export default function ComplainLists() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +27,7 @@ export default function ComplainLists() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {isLoading
             ? complaints.map((_, index) => {
-                return <Loader key={index} />;
+                return <LoaderServiceComplaint key={index} />;
               })
             : complaints.map((details, index) => {
                 return (

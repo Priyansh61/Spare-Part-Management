@@ -2,17 +2,29 @@ import React, { useContext, useState } from "react";
 import ServiceCenterPartsContext from "../../../Context/ServiceCenter/ServiceCenterPartsContext";
 import { ImCross } from "react-icons/im";
 import { BiMinus, BiPlus } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 export default function AvailableParts(props) {
-  const { unAvailableParts } = useContext(ServiceCenterPartsContext);
+  const { unAvailableParts, updateUnAvailableParts } = useContext(
+    ServiceCenterPartsContext
+  );
 
-  const initialCounts = Array.isArray(unAvailableParts)
-    ? new Array(unAvailableParts.length).fill(1)
-    : [];
+  const [counts, setCounts] = useState([]);
 
-  const [counts, setCounts] = useState(initialCounts);
+  const [unAvailablePartsQuantity, setUnAvailablePartsQuantity] = useState([]);
 
-  console.log(counts);
+  const navigate = useNavigate();
+
+  const initialCounts =
+    unAvailableParts.length !== 0 && Array.isArray(unAvailableParts)
+      ? new Array(unAvailableParts.length).fill(1)
+      : [];
+
+  if (unAvailableParts.length !== 0 && counts.length === 0) {
+    setCounts(initialCounts);
+  }
+
+  // console.log(counts);
   const handleIncrement = (index) => {
     const newCounts = [...counts];
     newCounts[index] += 1;
@@ -27,11 +39,39 @@ export default function AvailableParts(props) {
     }
   };
 
+  const handleOrderParts = (e) => {
+    e.preventDefault();
+    const parts = [];
+    unAvailableParts.forEach((part, index) => {
+      if (counts[index] > 0) {
+        parts.push({
+          partName: part,
+          quantity: counts[index],
+        });
+      }
+    });
+
+    console.log(parts);
+    setUnAvailablePartsQuantity(parts);
+    setCounts([]);
+    updateUnAvailableParts([]);
+    navigate("/complaint-list");
+    props.setTrigger(false);
+
+  };
+
+  const handleCancelPopup = (e) => {
+    e.preventDefault();
+    setCounts([]);
+    updateUnAvailableParts([]);
+    props.setTrigger(false);
+  };
+
   return props.trigger ? (
     <div className="fixed top-0 left-0 h-[100vh] px-6 w-full flex justify-center items-center bg-white bg-opacity-80 ">
       <div className="relative bg-white py-6 px-20 rounded-3xl w-11/12 my-4 shadow-xl max-md:w-full max-sm:p-6">
         <button
-          onClick={() => props.setTrigger(false)}
+          onClick={handleCancelPopup}
           className=" text-white w-10 h-10 flex justify-center absolute rounded-[100%] items-center shadow-xl bg-orange-500 -right-3 -top-3"
         >
           <ImCross />
@@ -41,7 +81,10 @@ export default function AvailableParts(props) {
             <h1 className="text-2xl font-bold text-center mb-4">
               All Parts are available in Service Center
             </h1>
-            <button className="flex justify-center items-center w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline">
+            <button
+              onClick={handleOrderParts}
+              className="flex justify-center items-center w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            >
               Proceed with Service
             </button>
           </div>
@@ -79,7 +122,10 @@ export default function AvailableParts(props) {
                 </div>
               </div>
             ))}
-            <button className="flex justify-center items-center w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline">
+            <button
+              onClick={handleOrderParts}
+              className="flex justify-center items-center w-1/2 mt-4 xl:w-2/5 md:w-1/2 text-center max-sm:w-full uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            >
               Order Parts
             </button>
           </div>

@@ -11,22 +11,22 @@ export default function RequiredParts() {
   const [searchResult, setSearchResult] = useState([]);
   const [partsRequired, setPartsRequired] = useState([]);
 
-  const { updateUnAvailableParts } = useContext(
-    ServiceCenterPartsContext
-  );
+  const { updateUnAvailableParts } = useContext(ServiceCenterPartsContext);
 
   const [buttonPopus, setButtonPopus] = useState(false);
 
   // Check AvailableParts
   const handleAvailableParts = (e) => {
+    e.preventDefault();
+
     if (!issues) {
       alert("Please Fill The Required Fields");
     }
-    e.preventDefault();
+
     var tempParts = [];
 
+    //check if an item exists in the JSON object
     for (const partName of partsRequired) {
-      //check if an item exists in the JSON object
       const foundPart = availablePartSS.find(
         (item) => item.part_name === partName && item.quantity !== 0
       );
@@ -38,8 +38,10 @@ export default function RequiredParts() {
       }
     }
 
-    updateUnAvailableParts(tempParts);
-    tempParts = [];
+    if (tempParts.length !== 0) {
+      updateUnAvailableParts(tempParts);
+      tempParts = [];
+    }
   };
 
   // delete search history

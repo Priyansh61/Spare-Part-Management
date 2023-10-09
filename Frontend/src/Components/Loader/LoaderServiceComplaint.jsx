@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Loader() {
+export default function LoaderServiceComplaint() {
   return (
     <div className="relative bg-gray-100 pt-6 px-6 rounded-3xl w-72 my-4 shadow-xl">
       <div className="w-10 h-10 flex justify-center absolute rounded-[100%] items-center animate-pulse shadow-xl -right-3 -top-3  mb-4 bg-gray-200"></div>
