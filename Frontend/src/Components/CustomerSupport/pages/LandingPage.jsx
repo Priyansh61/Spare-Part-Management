@@ -22,6 +22,8 @@ export default function LandingPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert("Complaint Registered");
+    setData({})
     // console.log(data);
   };
 
